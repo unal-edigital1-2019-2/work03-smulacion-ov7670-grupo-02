@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module cam_read #(
-		parameter AW = 15 // Cantidad de bits  de la dirección 
+		parameter AW = 17 // Cantidad de bits  de la dirección 
 		)(
 		input pclk,
 		input rst,

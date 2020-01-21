@@ -22,10 +22,81 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="test_cam.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="test_cam.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_cam_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_cam_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_cam_TB_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="test_cam_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1579617979" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1579617979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579617979" xil_pn:in_ck="3726475668346211702" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1579617979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="src/Capturador_DD.v"/>
+      <outfile xil_pn:name="src/PLL/clk24_25_nexys4.v"/>
+      <outfile xil_pn:name="src/VGA_driver.v"/>
+      <outfile xil_pn:name="src/buffer_ram_dp.v"/>
+      <outfile xil_pn:name="src/cam_read.v"/>
+      <outfile xil_pn:name="src/test_cam.v"/>
+      <outfile xil_pn:name="src/test_cam_TB.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1579617979" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3831910090228473788" xil_pn:start_ts="1579617979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579617979" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-996705092686142502" xil_pn:start_ts="1579617979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579617979" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1119751708929459667" xil_pn:start_ts="1579617979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1579617979" xil_pn:in_ck="3726475668346211702" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1579617979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="src/Capturador_DD.v"/>
+      <outfile xil_pn:name="src/PLL/clk24_25_nexys4.v"/>
+      <outfile xil_pn:name="src/VGA_driver.v"/>
+      <outfile xil_pn:name="src/buffer_ram_dp.v"/>
+      <outfile xil_pn:name="src/cam_read.v"/>
+      <outfile xil_pn:name="src/test_cam.v"/>
+      <outfile xil_pn:name="src/test_cam_TB.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1579618002" xil_pn:in_ck="3726475668346211702" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2515516211267276679" xil_pn:start_ts="1579617979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="test_cam_TB_beh.prj"/>
+      <outfile xil_pn:name="test_cam_TB_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1579618414" xil_pn:in_ck="9090415186890487892" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5656402615118925909" xil_pn:start_ts="1579618412">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="test_cam_TB_isim_beh.wdb"/>
+    </transform>
+  </transforms>
 
 </generated_project>

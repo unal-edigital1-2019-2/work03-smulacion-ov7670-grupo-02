@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/UECCI/Documents/GitHub/digital1/work03-simulacion-OV7670/hw/src/test_cam.v" Line 109: Port <arg fmt="%s" index="1">LOCKED</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/src/test_cam.v" Line 124: Port <arg fmt="%s" index="1">LOCKED</arg> is not connected to this instance
 </msg>
 
 </messages>

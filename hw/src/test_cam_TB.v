@@ -31,6 +31,7 @@ module test_cam_TB;
 	reg CAM_vsync;
 	reg CAM_href;
 	reg [7:0] CAM_px_data;
+	reg CBtn;
 
 	// Outputs
 	wire VGA_Hsync_n;
@@ -57,11 +58,13 @@ module test_cam_TB;
 		.CAM_pclk(pclk), 
 		.CAM_vsync(CAM_vsync), 
 		.CAM_href(CAM_href), 
-		.CAM_px_data(CAM_px_data)
+		.CAM_px_data(CAM_px_data),
+		.CBtn(CBtn)
 	);
 	reg img_generate=0;
 	initial begin
 		// Initialize Inputs
+		CBtn = 1;
 		clk = 0;
 		rst = 1;
 		pclk = 0;

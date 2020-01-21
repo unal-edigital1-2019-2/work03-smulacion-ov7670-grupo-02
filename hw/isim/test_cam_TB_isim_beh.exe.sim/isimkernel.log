@@ -2,27 +2,28 @@ Command line:
    test_cam_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50523
+     -socket  62262
 
-Thu Dec 12 22:33:16 2019
+Tue Jan 21 09:53:39 2020
 
 
- Elaboration Time: 0.078125 sec
+ Elaboration Time: 0.140625 sec
 
- Current Memory Usage: 5477.34 Meg
+ Current Memory Usage: 362.041 Meg
 
- Total Signals          : 194
- Total Nets             : 328
- Total Signal Drivers   : 109
- Total Blocks           : 22
- Total Primitive Blocks : 9
- Total Processes        : 249
- Total Traceable Variables  : 656
- Total Scalar Nets and Variables : 275107
+ Total Signals          : 200
+ Total Nets             : 333
+ Total Signal Drivers   : 113
+ Total Blocks           : 23
+ Total Primitive Blocks : 10
+ Total Processes        : 254
+ Total Traceable Variables  : 661
+ Total Scalar Nets and Variables : 1061576
+Total Line Count : 2563
 
- Total Simulation Time: 277.016 sec
+ Total Simulation Time: 2546.39 sec
 
- Current Memory Usage: 5005.48 Meg
+ Current Memory Usage: 362.041 Meg
 
-Thu Dec 12 22:37:56 2019
+Tue Jan 21 10:36:14 2020
 

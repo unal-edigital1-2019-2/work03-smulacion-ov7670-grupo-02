@@ -35,21 +35,20 @@ module test_cam(
 	output wire CAM_pwdn,		// power down mode 
 	output wire CAM_reset,		// clear all registers of cam
 	
-	// colocar aqui las entras  y salidas de la camara  que hace falta
-
 	input wire CAM_pclk,
 	input wire CAM_vsync,
 	input wire CAM_href,
-	input wire [7:0] CAM_px_data
+	input wire [7:0] CAM_px_data,
+	input wire CBtn
 
 		
 );
 
 // TAMAÑO DE ADQUISICIÓN DE LA CAMARA 
-parameter CAM_SCREEN_X = 160;
-parameter CAM_SCREEN_Y = 120;
+parameter CAM_SCREEN_X = 320;
+parameter CAM_SCREEN_Y = 240;
 
-localparam AW = 15; // LOG2(CAM_SCREEN_X*CAM_SCREEN_Y)
+localparam AW = 17; // LOG2(CAM_SCREEN_X*CAM_SCREEN_Y)
 localparam DW = 8;
 
 // El color es RGB 332
@@ -96,7 +95,23 @@ assign CAM_xclk=  clk24M;
 assign CAM_pwdn=  0;			// power down mode 
 assign CAM_reset=  0;
 
+/* ****************************************************************************
+	Capturadora de Datos.
+	El modulo de captura adquiere los datos de la camar en formato RGB565, y
+	filtra la captura a los bits mas significativos para convertirlos a formato
+	RGB 332. La capturadora esta dise�ada para diemnsiones hasta 320x240.
+**************************************************************************** */
 
+Capturador_DD Captura (
+	.VSYNC (CAM_vsync),
+	.HREF (CAM_href),
+	.PCLK (CAM_pclk),
+	.D (CAM_px_data),
+	.CBtn (CBtn),
+	.data (DP_RAM_data_in),
+	.addr (DP_RAM_addr_in),
+	.regwrite (DP_RAM_regW)
+);
 
 /* ****************************************************************************
   Este bloque se debe modificar según sea le caso. El ejemplo esta dado para

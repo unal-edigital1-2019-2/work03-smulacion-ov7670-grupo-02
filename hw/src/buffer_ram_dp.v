@@ -17,7 +17,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module buffer_ram_dp#( 
-	parameter AW = 15, // Cantidad de bits  de la dirección 
+	parameter AW = 17, // Cantidad de bits  de la dirección 
 	parameter DW = 8, // cantidad de Bits de los datos 
 	parameter   imageFILE= "src/image.men")
 	(  
@@ -51,7 +51,7 @@ end
 
 initial begin
 	$readmemh(imageFILE, ram);
-	ram[15'b111111111111111]=8'b00000000;	
+	ram[17'b11111111111111111]=8'b00000000;	
 end
 
 endmodule
