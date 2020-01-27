@@ -6,7 +6,6 @@ Determining compilation order of HDL files
 Analyzing Verilog file "C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/src/VGA_driver.v" into library work
 Analyzing Verilog file "C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/src/PLL/clk24_25_nexys4.v" into library work
 Analyzing Verilog file "C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/src/Capturador_DD.v" into library work
-Analyzing Verilog file "C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/src/cam_read.v" into library work
 Analyzing Verilog file "C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/src/buffer_ram_dp.v" into library work
 Analyzing Verilog file "C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/src/test_cam.v" into library work
 Analyzing Verilog file "C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/src/test_cam_TB.v" into library work
@@ -20,13 +19,12 @@ Compiling module MMCME2_ADV(CLKOUT1_DIVIDE=50,CLK...
 Compiling module clk24_25_nexys4
 Compiling module buffer_ram_dp(AW=17,DW=8)
 Compiling module VGA_Driver640x480_default
-Compiling module cam_read(AW=17)
 Compiling module test_cam
 Compiling module test_cam_TB
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 3 sub-compilation(s) to finish...
-Compiled 10 Verilog Units
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 9 Verilog Units
 Built simulation executable C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/test_cam_TB_isim_beh.exe
-Fuse Memory Usage: 42268 KB
-Fuse CPU Usage: 2515 ms
+Fuse Memory Usage: 42380 KB
+Fuse CPU Usage: 2452 ms

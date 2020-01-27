@@ -174,23 +174,10 @@ always @ (VGA_posX, VGA_posY) begin
 		if ((VGA_posX>CAM_SCREEN_X-1) || (VGA_posY>CAM_SCREEN_Y-1))
 			DP_RAM_addr_out=15'b111111111111111;
 		else
-			DP_RAM_addr_out=VGA_posX+VGA_posY*CAM_SCREEN_Y;
+			DP_RAM_addr_out=VGA_posX+VGA_posY*CAM_SCREEN_X;
 end
 
 
 /*****************************************************************************
-
-
 **************************************************************************** */
- cam_read #(AW)ov7076_565_to_332(
-		.pclk(CAM_pclk),
-		.rst(rst),
-		.vsync(CAM_vsync),
-		.href(CAM_href),
-		.px_data(CAM_px_data),
-
-		.mem_px_addr(DP_RAM_addr_in),
-		.mem_px_data(DP_RAM_data_in),
-		.px_wr(DP_RAM_regW)
-   );
 endmodule

@@ -576,7 +576,7 @@ LAB31:    xsi_set_current_line(177, ng0);
     t3 = *((char **)t2);
     t2 = (t0 + 5840U);
     t4 = *((char **)t2);
-    t2 = (t0 + 608);
+    t2 = (t0 + 472);
     t5 = *((char **)t2);
     memset(t7, 0, 8);
     xsi_vlog_unsigned_multiply(t7, 32, t4, 9, t5, 32);
@@ -700,9 +700,9 @@ LAB30:    xsi_set_current_line(175, ng0);
 }
 
 
-extern void work_m_00000000003929258791_0898626419_init()
+extern void work_m_00000000000293240281_0898626419_init()
 {
 	static char *pe[] = {(void *)Cont_84_0,(void *)Cont_85_1,(void *)Cont_86_2,(void *)Cont_94_3,(void *)Cont_95_4,(void *)Cont_96_5,(void *)Always_173_6};
-	xsi_register_didat("work_m_00000000003929258791_0898626419", "isim/test_cam_TB_isim_beh.exe.sim/work/m_00000000003929258791_0898626419.didat");
+	xsi_register_didat("work_m_00000000000293240281_0898626419", "isim/test_cam_TB_isim_beh.exe.sim/work/m_00000000000293240281_0898626419.didat");
 	xsi_register_executes(pe);
 }
