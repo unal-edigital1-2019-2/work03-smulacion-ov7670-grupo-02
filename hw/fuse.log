@@ -23,8 +23,8 @@ Compiling module test_cam
 Compiling module test_cam_TB
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
+Waiting for 2 sub-compilation(s) to finish...
 Compiled 9 Verilog Units
 Built simulation executable C:/Users/USER PC/Trabajo/David/Repositorios/work03-smulacion-ov7670-grupo-02/hw/test_cam_TB_isim_beh.exe
-Fuse Memory Usage: 42380 KB
-Fuse CPU Usage: 2452 ms
+Fuse Memory Usage: 42312 KB
+Fuse CPU Usage: 655 ms

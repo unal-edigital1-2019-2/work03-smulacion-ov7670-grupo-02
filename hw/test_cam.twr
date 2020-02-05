@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml test_cam.twx test_cam.ncd -o test_cam.twr test_cam.pcf
+
+Design file:              test_cam.ncd
+Physical constraint file: test_cam.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CAM_pclk
+--------------+------------+------------+------------+------------+------------------+--------+
+              |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source        | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------+------------+------------------+--------+
+CAM_href      |    0.792(R)|      FAST  |    1.885(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CAM_px_data<0>|   -0.241(R)|      FAST  |    2.030(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CAM_px_data<1>|   -0.097(R)|      FAST  |    1.847(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CAM_px_data<2>|    0.215(R)|      FAST  |    1.539(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CAM_px_data<3>|    0.117(R)|      FAST  |    1.555(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CAM_px_data<4>|   -0.428(R)|      FAST  |    2.235(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CAM_px_data<5>|    0.095(R)|      FAST  |    1.580(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CAM_px_data<6>|    0.123(R)|      FAST  |    1.571(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CAM_px_data<7>|    0.113(R)|      FAST  |    1.545(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CAM_vsync     |    0.979(R)|      SLOW  |    1.642(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+CBtn          |    0.761(R)|      FAST  |    1.672(R)|      SLOW  |CAM_pclk_BUFGP    |   0.000|
+--------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst         |    0.608(R)|      FAST  |    1.354(R)|      SLOW  |clk25M            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+VGA_B<2>    |        12.376(R)|      SLOW  |         4.197(R)|      FAST  |clk25M            |   0.000|
+VGA_B<3>    |        12.982(R)|      SLOW  |         4.236(R)|      FAST  |clk25M            |   0.000|
+VGA_G<1>    |        13.269(R)|      SLOW  |         4.292(R)|      FAST  |clk25M            |   0.000|
+VGA_G<2>    |        13.699(R)|      SLOW  |         4.309(R)|      FAST  |clk25M            |   0.000|
+VGA_G<3>    |        13.672(R)|      SLOW  |         4.210(R)|      FAST  |clk25M            |   0.000|
+VGA_Hsync_n |        11.262(R)|      SLOW  |         4.253(R)|      FAST  |clk25M            |   0.000|
+VGA_R<1>    |        13.739(R)|      SLOW  |         4.118(R)|      FAST  |clk25M            |   0.000|
+VGA_R<2>    |        13.837(R)|      SLOW  |         4.432(R)|      FAST  |clk25M            |   0.000|
+VGA_R<3>    |        13.302(R)|      SLOW  |         4.188(R)|      FAST  |clk25M            |   0.000|
+VGA_Vsync_n |        11.890(R)|      SLOW  |         4.251(R)|      FAST  |clk25M            |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CAM_pclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CAM_pclk       |    3.036|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.360|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |CAM_xclk       |    8.331|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jan 30 16:28:50 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 666 MB
+
+
+

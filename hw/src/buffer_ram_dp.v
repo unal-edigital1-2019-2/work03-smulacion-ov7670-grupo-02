@@ -37,7 +37,7 @@ localparam NPOS = 2 ** AW; // Memoria
  reg [DW-1: 0] ram [0: NPOS-1]; 
 
 
-//	 escritura  de la memoria port 1 
+//	 Escritura  de la memoria port 1 
 always @(posedge clk_w) begin 
        if (regwrite == 1) 
              ram[addr_in] <= data_in;

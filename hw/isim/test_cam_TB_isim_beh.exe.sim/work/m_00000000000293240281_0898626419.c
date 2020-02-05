@@ -25,7 +25,7 @@ static const char *ng0 = "C:/Users/USER PC/Trabajo/David/Repositorios/work03-smu
 static unsigned int ng1[] = {0U, 0U};
 static int ng2[] = {0, 0};
 static int ng3[] = {1, 0};
-static unsigned int ng4[] = {32767U, 0U};
+static unsigned int ng4[] = {131071U, 0U};
 
 
 

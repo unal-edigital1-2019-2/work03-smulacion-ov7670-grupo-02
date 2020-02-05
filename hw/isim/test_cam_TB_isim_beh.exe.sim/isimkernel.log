@@ -2,14 +2,14 @@ Command line:
    test_cam_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  59061
+     -socket  51385
 
-Mon Jan 27 09:33:21 2020
+Wed Feb 05 09:26:47 2020
 
 
- Elaboration Time: 0.15625 sec
+ Elaboration Time: 0.140625 sec
 
- Current Memory Usage: 366.297 Meg
+ Current Memory Usage: 366.342 Meg
 
  Total Signals          : 192
  Total Nets             : 333
@@ -21,9 +21,9 @@ Mon Jan 27 09:33:21 2020
  Total Scalar Nets and Variables : 1061692
 Total Line Count : 2573
 
- Total Simulation Time: 3653.8 sec
+ Total Simulation Time: 3645.05 sec
 
- Current Memory Usage: 366.297 Meg
+ Current Memory Usage: 366.342 Meg
 
-Mon Jan 27 10:40:06 2020
+Wed Feb 05 12:47:34 2020
 
